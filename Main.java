@@ -72,6 +72,11 @@ public class Main {
         public final static Block platinumBlock = new Block(818, Material.rock).setHardness(3.0F).setStepSound(Block.soundStoneFootstep).setUnlocalizedName("platinumBlock").setCreativeTab(CreativeTabs.tabBlock).setTextureName("main:platinumBlock");
         public final static Item platinumIngot = new Item(819).setUnlocalizedName("platinumIngot").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("main:platinumIngot");
         
+        //Reforce
+        public final static Block reforceOre = new Block(820, Material.rock).setHardness(2.5F).setStepSound(Block.soundStoneFootstep).setUnlocalizedName("reforceOre").setCreativeTab(CreativeTabs.tabBlock).setTextureName("main:reforceOre");
+        public final static Block reforceBlock = new Block(821, Material.rock).setHardness(3.0F).setStepSound(Block.soundStoneFootstep).setUnlocalizedName("reforceBlock").setCreativeTab(CreativeTabs.tabBlock).setTextureName("main:reforceBlock");
+        public final static Item reforceIngot = new Item(822).setUnlocalizedName("reforceIngot").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("main:reforceIngot");
+        
         @SidedProxy(clientSide="vanillaexpansion.bzrkthecoder.tk.client.ClientProxy", serverSide="vanillaexpansion.bzrkthecoder.tk.CommonProxy")
         public static CommonProxy proxy;
         
@@ -126,6 +131,10 @@ public class Main {
                 LanguageRegistry.addName(platinumOre, "Platinum Ore");
                 MinecraftForge.setBlockHarvestLevel(platinumOre, "pickaxe", 3);
                 
+                GameRegistry.registerBlock(reforceOre, "reforceOre");
+                LanguageRegistry.addName(reforceOre, "Reforce Ore");
+                MinecraftForge.setBlockHarvestLevel(reforceOre, "pickaxe", 2);
+                
                 //Ingots
                 GameRegistry.registerItem(copperIngot, "copperIngot");
                 LanguageRegistry.addName(copperIngot, "Copper Ingot");
@@ -147,6 +156,9 @@ public class Main {
                 
                 GameRegistry.registerItem(platinumIngot, "platinumIngot");
                 LanguageRegistry.addName(platinumIngot, "Platinum Ingot");
+                
+                GameRegistry.registerItem(reforceIngot, "reforceIngot");
+                LanguageRegistry.addName(reforceIngot, "Reforce Ingot");
                 
                 GameRegistry.registerItem(limestoneFragment, "limestoneFragment");
                 LanguageRegistry.addName(limestoneFragment, "Limestone Fragment");
@@ -179,6 +191,10 @@ public class Main {
                 GameRegistry.registerBlock(platinumBlock, "platinumBlock");
                 LanguageRegistry.addName(platinumBlock, "Block of Platinum");
                 MinecraftForge.setBlockHarvestLevel(platinumBlock, "pickaxe", 3);
+                
+                GameRegistry.registerBlock(reforceBlock, "reforceBlock");
+                LanguageRegistry.addName(reforceBlock, "Block of reforce");
+                MinecraftForge.setBlockHarvestLevel(reforceBlock, "pickaxe", 2);
                 
                 GameRegistry.registerBlock(limestone, "limestone");
                 LanguageRegistry.addName(limestone, "Limestone");
