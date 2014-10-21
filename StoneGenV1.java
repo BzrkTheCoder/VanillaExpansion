@@ -24,7 +24,7 @@ public class StoneGenV1 extends Block {
 		if(this.idDropped(par5, world.rand, par7) != this.blockID) {
 			
 			int xp = 0;
-			xp = MathHelper.getRandomIntegerInRange(world.rand, 2, 25);
+			xp = MathHelper.getRandomIntegerInRange(world.rand, 5, 15);
 			
 			this.dropXpOnBlockBreak(world, par2, par3, par4, xp);
 		}
