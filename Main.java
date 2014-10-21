@@ -92,10 +92,12 @@ public class Main {
                 ItemStack miStack = new ItemStack(Main.manganeseIngot);
                 ItemStack liStack = new ItemStack(Main.leadIngot);
                 ItemStack piStack = new ItemStack(Main.platinumIngot);
-                ItemStack li2Stack = new ItemStack(Main.limestoneFragment);
+                ItemStack li2Stack = new ItemStack(Main.limestoneFragment, 4);
+                ItemStack li3Stack = new ItemStack(Main.limestone);
                 
                 //Crafting
                 GameRegistry.addRecipe(biStack, "yy ", "yx ",'y', tiStack, 'x', ciStack);
+                GameRegistry.addRecipe(li3Stack, "yy ", "yy ",'y', li2Stack);
                 
                 //Registry
                 
