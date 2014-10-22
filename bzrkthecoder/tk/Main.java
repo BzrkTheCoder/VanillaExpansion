@@ -23,7 +23,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
-@Mod(modid="VanillaExpansion", name="Vanilla Expansion", version="0.0.5.1")
+@Mod(modid="VanillaExpansion", name="Vanilla Expansion", version="0.0.5.1", dependencies="required-after:Forge@[9.11.1.953,))
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
 public class Main {	
 	
